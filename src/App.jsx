@@ -9,9 +9,10 @@ const FACULTIES = [
     tagline: "Code-ing Nerds? Here's the People",
     color: "#00C9A7",
     members: [
+      { name: "Natasha Pratiwi Rahardja", major: "Computer Science", photo: "/photos/nat.jpg" },
       { name: "Stevin Grace", major: "Computer Science", photo: "/photos/stevin.jpg" },
       { name: "Sylvester Luigi Hidayat", major: "Computer Science", photo: "/photos/luigi.jpg" },
-      { name: "Natasha Pratiwi Rahardja", major: "Computer Science", photo: "/photos/nat.jpg" },
+      
     ],
   },
   {
@@ -99,9 +100,9 @@ const TIMELINE = [
   { phase: "02", label: "Training", title: "Training FL & FP", desc: "Pelatihan intensif untuk semua Freshmen Leader dan Freshmen Peer sebelum orientasi dimulai.", date: "Juli" },
   { phase: "03", label: "Briefing", title: "Briefing FL & FYPL", desc: "Final briefing sebelum FYP. Semua siap menyambut mahasiswa baru BINUSIAN 30!", date: "Juli" },
   { phase: "04", label: "Opening", title: "Opening FYP B30", desc: "Pembukaan resmi FYP B30 Alam Sutera — welcome to the Binusian journey!", date: "Juli" },
-  { phase: "05", label: "NEXT", title: "New Student Experience & Transition", desc: "Dua minggu penuh orientasi dipimpin FL. Kenalan, eksplorasi, dan settle in di BINUS Alam Sutera.", date: "20 Juli - 1 Agustus (Batch 1) | 3 - 15 Agustus (Batch 2)" },
-  { phase: "06", label: "AE", title: "Academic Experience", desc: "Pengenalan kehidupan akademik, sistem belajar, dan lingkungan kampus BINUS secara menyeluruh.", date: "18 - 29 Agustus" },
-  { phase: "07", label: "Inauguration", title: "Inauguration", desc: "Puncak dari FYP — peresmian resmi sebagai Binusian. Selamat datang, mahasiswa baru!", date: "4 September" },
+  { phase: "05", label: "NEXT", title: "New Student Experience & Transition", desc: "Dua minggu penuh orientasi dipimpin FL. Kenalan, eksplorasi, dan settle in di BINUS Alam Sutera.", date: "Juli - Agustus" },
+  { phase: "06", label: "AE", title: "Academic Experience", desc: "Pengenalan kehidupan akademik, sistem belajar, dan lingkungan kampus BINUS secara menyeluruh.", date: "Agustus" },
+  { phase: "07", label: "Inauguration", title: "Inauguration", desc: "Puncak dari FYP — peresmian resmi sebagai Binusian. Selamat datang, mahasiswa baru!", date: "September" },
 ];
 
 const FAQS = [
@@ -313,58 +314,107 @@ function Navbar() {
 
 function Hero() {
   const [blink, setBlink] = useState(true);
-  useEffect(() => { const t = setInterval(() => setBlink(b => !b), 600); return () => clearInterval(t); }, []);
+  const [isMobile, setIsMobile] = useState(null);
+
+  useEffect(() => {
+    const t = setInterval(() => setBlink(b => !b), 600);
+    return () => clearInterval(t);
+  }, []);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  if (isMobile === null) return null;
+
+  if (isMobile) {
+    return (
+      <section id="hero" style={{
+        minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center",
+        position: "relative", overflow: "hidden", padding: "80px 2rem 4rem",
+        background: "#8B0000",
+      }}>
+        <div style={{ position:"absolute", inset:0, backgroundImage:"linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)", backgroundSize:"24px 24px", zIndex:0 }}/>
+        <div style={{ position:"absolute", inset:0, backgroundImage:"repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15) 2px,transparent 2px,transparent 4px)", zIndex:1, pointerEvents:"none" }}/>
+
+        <div style={{ position:"relative", zIndex:2, textAlign:"center", maxWidth:900 }}>
+          <div style={{
+            display:"inline-block", fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
+            letterSpacing:"3px", color:"#1A0000", background:"#FFD600",
+            padding:"0.5rem 1.5rem", marginBottom:"2rem",
+            border:"3px solid #1A0000", boxShadow:"4px 4px 0 rgba(0,0,0,0.4)",
+          }}>BINUS ALAM SUTERA · B30</div>
+
+          <h1 style={{
+            fontFamily:"'Press Start 2P',monospace", fontSize:"clamp(2rem,8vw,5.5rem)",
+            lineHeight:1.3, color:"#FAFAF5", textShadow:"4px 4px 0 rgba(0,0,0,0.5)", marginBottom:"1.5rem",
+          }}>
+            <span style={{ color:"#FFD600", display:"block" }}>FYP</span>
+            <span style={{ color:"#00C9A7", display:"block", fontSize:"0.55em" }}>LEADERS</span>
+            <span style={{ display:"block", fontSize:"0.45em" }}>B30</span>
+          </h1>
+
+          <p style={{
+            fontFamily:"'Press Start 2P',monospace", fontSize:"0.55rem",
+            color:"rgba(255,255,255,0.8)", lineHeight:2.2,
+            maxWidth:600, margin:"0 auto 2.5rem", letterSpacing:"0.5px",
+          }}>
+            Meet the amazing people who'll guide your first step as a Binusian.
+          </p>
+
+          <div style={{ display:"flex", gap:"1rem", justifyContent:"center", flexWrap:"wrap" }}>
+            <PixelBtn onClick={() => document.getElementById("fypl")?.scrollIntoView({behavior:"smooth"})}>
+              MEET THE FYPL
+            </PixelBtn>
+            <PixelBtn
+              onClick={() => document.getElementById("timeline")?.scrollIntoView({behavior:"smooth"})}
+              color="transparent" textColor="#FFD600"
+              style={{ border:"3px solid #FFD600", boxShadow:"4px 4px 0 rgba(0,0,0,0.4)" }}
+            >
+              SEE TIMELINE
+            </PixelBtn>
+          </div>
+
+          <div style={{
+            marginTop:"3rem", fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
+            color: blink ? "rgba(255,255,255,0.6)" : "transparent",
+            letterSpacing:"2px", transition:"color 0.1s",
+          }}>▼ SCROLL DOWN ▼</div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="hero" style={{
       minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center",
       position: "relative", overflow: "hidden", padding: "80px 2rem 4rem",
       background: "linear-gradient(rgba(139, 0, 0, 0), rgba(80,0,0,0.6)), url('/SEMUAA.png') center 100%/100% no-repeat",
     }}>
-      {/* Pixel grid bg */}
-      <div style={{
-        position:"absolute", inset:0,
-        backgroundImage:"linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)",
-        backgroundSize:"24px 24px", zIndex:0,
-      }}/>
-      {/* Pixel scanlines */}
-      <div style={{
-        position:"absolute", inset:0,
-        backgroundImage:"repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15) 2px,transparent 2px,transparent 4px)",
-        zIndex:1, pointerEvents:"none",
-      }}/>
- 
-      {/* Badge — absolute di atas tengah, tidak ngalangin muka */}
-      <div style={{
-        position:"absolute", top:"5.5rem", left:0, right:0,
-        display:"flex", justifyContent:"center", zIndex:3,
-      }}>
+      <div style={{ position:"absolute", inset:0, backgroundImage:"linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)", backgroundSize:"24px 24px", zIndex:0 }}/>
+      <div style={{ position:"absolute", inset:0, backgroundImage:"repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15) 2px,transparent 2px,transparent 4px)", zIndex:1, pointerEvents:"none" }}/>
+
+      <div style={{ position:"absolute", top:"5.5rem", left:0, right:0, display:"flex", justifyContent:"center", zIndex:3 }}>
         <div style={{
-          display:"inline-block",
-          fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
-          letterSpacing:"3px", color:"#1A0000", background:"#FFD600",
-          padding:"0.5rem 1.5rem",
+          display:"inline-block", fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
+          letterSpacing:"3px", color:"#1A0000", background:"#FFD600", padding:"0.5rem 1.5rem",
           border:"3px solid #1A0000", boxShadow:"4px 4px 0 rgba(0,0,0,0.4)",
         }}>BINUS ALAM SUTERA · FYP B30</div>
-        
       </div>
-      
- 
-      {/* Content — di bawah, muka bebas di tengah */}
-      <div style={{
-        position:"absolute", bottom:"3rem", left:0, right:0,
-        display:"flex", flexDirection:"column", alignItems:"center",
-        gap:"1.5rem", zIndex:3, padding:"0 2rem",
-      }}>
+
+      <div style={{ position:"absolute", bottom:"3rem", left:0, right:0, display:"flex", flexDirection:"column", alignItems:"center", gap:"1.5rem", zIndex:3, padding:"0 2rem" }}>
         <p style={{
           fontFamily:"'Press Start 2P',monospace", fontSize:"0.55rem",
           color:"rgba(255,255,255,0.9)", lineHeight:2.2,
-          maxWidth:600, margin:0, textAlign:"center",
-          letterSpacing:"0.5px",
+          maxWidth:600, margin:0, textAlign:"center", letterSpacing:"0.5px",
           textShadow:"2px 2px 6px rgba(0,0,0,0.9)",
         }}>
           Meet the amazing people who'll guide your first step as a Binusian.
         </p>
- 
+
         <div style={{ display:"flex", gap:"1rem", justifyContent:"center", flexWrap:"wrap" }}>
           <PixelBtn onClick={() => document.getElementById("fypl")?.scrollIntoView({behavior:"smooth"})}>
             MEET THE FYPL
@@ -377,7 +427,7 @@ function Hero() {
             SEE TIMELINE
           </PixelBtn>
         </div>
- 
+
         <div style={{
           fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
           color: blink ? "rgba(255,255,255,0.6)" : "transparent",
