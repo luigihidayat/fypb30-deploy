@@ -760,7 +760,7 @@ function Footer() {
     <footer style={{ background:"#0D0000", borderTop:"1px solid rgba(255,214,0,0.2)", padding:"2.5rem 2rem", textAlign:"center" }}>
       <div style={{ fontFamily:"'Press Start 2P',monospace", fontSize:"0.8rem", color:"#FFD600", letterSpacing:"2px", marginBottom:"1rem" }}>FYPL B30 ALSUT</div>
       <p style={{ fontFamily:"'Press Start 2P',monospace", fontSize:"0.4rem", color:"rgba(255,255,255,0.4)", lineHeight:2.5 }}>
-        FYP Batch 30 · BINUS University Alam Sutera<br/>
+        FYP B30 · BINUS University Alam Sutera<br/>
         <a href="https://www.instagram.com/efwaipiel.alsut" target="_blank" rel="noopener" style={{ color:"#00C9A7", textDecoration:"none" }}>@efwaipiel.alsut</a>
         {" · "}
         <a href="mailto:sso.alamsutera@binus.edu" style={{ color:"#00C9A7", textDecoration:"none" }}>sso.alamsutera@binus.edu</a>
