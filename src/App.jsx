@@ -108,11 +108,11 @@ const TIMELINE = [
 const FAQS = [
   {
     q: "Apa itu FL dan FP?",
-    a: "Freshmen Leader (FL) merupakan pihak yang berperan penting dalam rangkaian NEXT dan menjadi orang pertama yang berinteraksi dengan mahasiswa baru. FL membantu mahasiswa baru beradaptasi dengan lingkungan kampus serta memastikan kegiatan berjalan lancar. Selain itu, terdapat Freshmen Partner (FP) yang membantu memfasilitasi materi EESE. Baik FL maupun FP sama-sama membimbing mahasiswa baru dalam memahami nilai-nilai BINUS seperti BGA dan SPIRIT.",
+    a: "Freshmen Leader (FL) merupakan pihak yang berperan penting dalam rangkaian NEXT dan menjadi orang pertama yang berinteraksi dengan mahasiswa baru. FL membantu mahasiswa baru beradaptasi dengan lingkungan kampus serta memastikan kegiatan berjalan lancar. Selain itu, terdapat Freshmen Partner (FP) yang membantu memfasilitasi materi EESE dan mendampingi B30 dalam CSA project. Baik FL maupun FP sama-sama membimbing mahasiswa baru dalam memahami nilai-nilai BINUS seperti BGA dan SPIRIT.",
   },
   {
     q: "Apa keuntungan menjadi FL atau FP?",
-    a: "Banyak keuntungannya! Ada sertifikat, poin SAT (untuk FL), poin community service (untuk FP), dan banyak soft skill yang akan kamu kembangkan. Kamu juga mendapat lanyard, kaos (untuk FL), apparel eksklusif (untuk FP), dan parkir gratis selama menjadi FL atau FP.",
+    a: "Banyak keuntungannya! Ada sertifikat, poin SAT (untuk FL), community service hours (untuk FP), dan banyak soft skill yang akan kamu kembangkan. Kamu juga mendapat lanyard, kaos (untuk FL), apparel eksklusif (untuk FP), dan parkir gratis selama menjadi FL atau FP.",
   },
   {
     q: "Bagaimana cara mendaftar sebagai FL atau FP?",
@@ -124,7 +124,7 @@ const FAQS = [
   },
   {
     q: "Apa perbedaan FL dan FP?",
-    a: "Perbedaan utama adalah waktu tugas. FL bekerja selama NEXT sampai Inagurasi, sedangkan FP aktif sepanjang Excellent Program — sekitar setahun selama semester 1 dan 2 mahasiswa baru. FP lebih seperti mentor jangka panjang, sementara FL fokus memimpin dan mengelola acara orientasi.",
+    a: "Perbedaan utama adalah waktu tugas. FL bekerja selama NEXT sampai Inaugurasi, sedangkan FP aktif sepanjang Excellent Program selama semester 1 dan 2 mahasiswa baru.",
   },
   // {
   //   q: "Kapan NEXT B30 diadakan?",
@@ -388,6 +388,7 @@ function Hero() {
     );
   }
 
+  // DESKTOP
   return (
     <section id="hero" style={{
       minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center",
@@ -397,15 +398,17 @@ function Hero() {
       <div style={{ position:"absolute", inset:0, backgroundImage:"linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)", backgroundSize:"24px 24px", zIndex:0 }}/>
       <div style={{ position:"absolute", inset:0, backgroundImage:"repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15) 2px,transparent 2px,transparent 4px)", zIndex:1, pointerEvents:"none" }}/>
 
-      <div style={{ position:"absolute", top:"5.5rem", left:0, right:0, display:"flex", justifyContent:"center", zIndex:3 }}>
+      {/* Badge + tagline stacked di atas */}
+      <div style={{
+        position:"absolute", top:"5.5rem", left:0, right:0,
+        display:"flex", flexDirection:"column", alignItems:"center", gap:"1rem", zIndex:3,
+      }}>
         <div style={{
           display:"inline-block", fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
-          letterSpacing:"3px", color:"#1A0000", background:"#FFD600", padding:"0.5rem 1.5rem",
+          letterSpacing:"3px", color:"#1A0000", background:"#FFD600",
+          padding:"0.5rem 1.5rem",
           border:"3px solid #1A0000", boxShadow:"4px 4px 0 rgba(0,0,0,0.4)",
         }}>BINUS ALAM SUTERA · FYP B30</div>
-      </div>
-
-      <div style={{ position:"absolute", bottom:"3rem", left:0, right:0, display:"flex", flexDirection:"column", alignItems:"center", gap:"1.5rem", zIndex:3, padding:"0 2rem" }}>
         <p style={{
           fontFamily:"'Press Start 2P',monospace", fontSize:"0.55rem",
           color:"rgba(255,255,255,0.9)", lineHeight:2.2,
@@ -414,7 +417,13 @@ function Hero() {
         }}>
           Meet the amazing people who'll guide your first step as a Binusian.
         </p>
+      </div>
 
+      {/* Buttons + scroll di bawah */}
+      <div style={{
+        position:"absolute", bottom:"3rem", left:0, right:0,
+        display:"flex", flexDirection:"column", alignItems:"center", gap:"1.5rem", zIndex:3, padding:"0 2rem",
+      }}>
         <div style={{ display:"flex", gap:"1rem", justifyContent:"center", flexWrap:"wrap" }}>
           <PixelBtn onClick={() => document.getElementById("fypl")?.scrollIntoView({behavior:"smooth"})}>
             MEET THE FYPL
@@ -427,7 +436,6 @@ function Hero() {
             SEE TIMELINE
           </PixelBtn>
         </div>
-
         <div style={{
           fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem",
           color: blink ? "rgba(255,255,255,0.6)" : "transparent",
