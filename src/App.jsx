@@ -107,8 +107,8 @@ const TIMELINE = [
 
 const FAQS = [
   {
-    q: "Apa itu FL dan apa yang mereka lakukan?",
-    a: "Freshmen Leader (FL) adalah salah satu peran dalam seluruh rangkaian FYP. FL adalah orang pertama yang akan berinteraksi dengan mahasiswa baru selama orientasi. Selama sekitar seminggu, FL membantu memandu mahasiswa baru beradaptasi dengan kehidupan kampus, memahami dan menerapkan nilai-nilai inti BINUS (BGA, SPIRIT, dll.), dan memastikan semua berjalan lancar.",
+    q: "Apa itu FL dan FP?",
+    a: "Freshmen Leader (FL) merupakan pihak yang berperan penting dalam rangkaian NEXT dan menjadi orang pertama yang berinteraksi dengan mahasiswa baru. FL membantu mahasiswa baru beradaptasi dengan lingkungan kampus serta memastikan kegiatan berjalan lancar. Selain itu, terdapat Freshmen Partner (FP) yang membantu memfasilitasi materi EESE. Baik FL maupun FP sama-sama membimbing mahasiswa baru dalam memahami nilai-nilai BINUS seperti BGA dan SPIRIT.",
   },
   {
     q: "Apa keuntungan menjadi FL atau FP?",
@@ -116,23 +116,23 @@ const FAQS = [
   },
   {
     q: "Bagaimana cara mendaftar sebagai FL atau FP?",
-    a: "Pergi ke freshmen.apps.binus.ac.id (jika lambat/error, coba incognito atau browser lain). Lalu ke 'student registration', pastikan role di atas diset ke 'freshmen chaperone', klik 'search'. Scroll ke bawah dan kamu akan melihat poster rekrutmen terbuka untuk FL dan FP. Isi form personal info, pilih role, upload CV, dan submit. Jangan lupa pilih jadwal interview di menu 'schedule selection'.",
+    a: "Login ke freshmen.apps.binus.ac.id (jika lambat/error, coba incognito atau browser lain). Lalu ke 'orientation registration' dan pilih 'student registration' pastikan role di atas diset ke 'freshmen chaperone', klik 'search'. Scroll ke bawah dan kamu akan melihat poster rekrutmen terbuka untuk FL dan FP. Isi form personal info, pilih role, upload CV, dan submit. Jangan lupa pilih jadwal interview di menu 'schedule selection'.",
   },
   {
     q: "Bagaimana proses seleksi FL dan FP?",
-    a: "Seleksi biasanya dimulai sekitar seminggu setelah pendaftaran dibuka. Setelah mendaftar, kamu akan diundang ke grup oleh FYPL departemenmu. Mereka akan memberikan detail jadwal interview, ruangan, dan teknis lainnya. Setelah interview, tunggu hasil yang akan ditinjau oleh SSO dan departemen — mungkin butuh sekitar 1–2 bulan. Hasilnya dikirim ke email BINUS kamu.",
+    a: "Setelah mengisi 'schedule selection', kamu akan diundang ke grup oleh FYPL fakultas kamu. Mereka akan memberikan detail jadwal interview, ruangan, dan teknis lainnya. Setelah interview, hasil akan di umumkan setelah seluruh proses rekrutmen selesai.",
   },
   {
     q: "Apa perbedaan FL dan FP?",
-    a: "Perbedaan utama adalah waktu tugas. FL bekerja selama orientasi sampai inaugurasi, sedangkan FP aktif sepanjang Excellent Program — sekitar setahun selama semester 1 dan 2 mahasiswa baru. FP lebih seperti mentor jangka panjang, sementara FL fokus memimpin dan mengelola acara orientasi.",
+    a: "Perbedaan utama adalah waktu tugas. FL bekerja selama NEXT sampai Inagurasi, sedangkan FP aktif sepanjang Excellent Program — sekitar setahun selama semester 1 dan 2 mahasiswa baru. FP lebih seperti mentor jangka panjang, sementara FL fokus memimpin dan mengelola acara orientasi.",
   },
+  // {
+  //   q: "Kapan NEXT B30 diadakan?",
+  //   a: "NEXT (New Student Experience & Transition) B30 akan diadakan dari 20 Juli - 1 Agustus (Batch 1) dan 3 - 15 Agustus (Batch 2), dilanjutkan dengan Academic Experience 18-29 Agustus dan Inauguration pada 4 September.",
+  // },
   {
-    q: "Kapan NEXT B30 diadakan?",
-    a: "NEXT (New Student Experience & Transition) B30 akan diadakan dari 20 Juli - 1 Agustus (Batch 1) dan 3 - 15 Agustus (Batch 2), dilanjutkan dengan Academic Experience 18-29 Agustus dan Inauguration pada 4 September.",
-  },
-  {
-    q: "Apakah mahasiswa semester 4 yang sedang magang bisa daftar FP?",
-    a: "Bisa! Meskipun sedang magang, kamu tetap perlu memimpin sesi EESE 2 (yang berlangsung saat magang), tapi pertemuannya tidak seintensif EESE 1 — mungkin hanya sekali setiap 1–3 minggu. Kamu hanya perlu datang ke kampus untuk check-in manual setiap sesi.",
+    q: "Apakah mahasiswa B28 yang nanti akan magang bisa daftar FP?",
+    // a: "Bisa! Meskipun sedang magang, kamu tetap perlu memimpin sesi EESE 1, tapi pertemuannya tidak seintensif EESE 1 — mungkin hanya sekali setiap 1–3 minggu. Kamu hanya perlu datang ke kampus untuk check-in manual setiap sesi.",
   },
 ];
 
