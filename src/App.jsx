@@ -226,7 +226,7 @@ function Navbar() {
       <nav style={{
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
         background: scrolled ? "rgba(255,255,255,0.97)" : "transparent",
-        borderBottom: scrolled ? "2px solid rgba(0,0,0,0.15)" : "none",
+        borderBottom: scrolled ? "2px solid rgba(0, 0, 0, 0.15)" : "none",
         backdropFilter: scrolled ? "blur(8px)" : "none",
         transition: "all 0.35s ease",
         padding: "0 2rem",
@@ -236,15 +236,15 @@ function Navbar() {
           {/* LOGO */}
           <div onClick={() => scrollTo("hero")} style={{ cursor: "pointer", display: "flex", alignItems: "center" }}>
             <img
-              src="/logo.png"
-              alt="FYPL B30 Balsut"
+              src="/logoheader.png"
+              alt="FYPL B30 Alsut"
               style={{
                 height: scrolled ? 68 : 80,
                 width: "auto",
                 objectFit: "contain",
                 transition: "height 0.35s ease, filter 0.35s ease",
                 filter: scrolled
-                  ? "drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000)"
+                  ? "drop-shadow(1px 0 0 #000000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000)"
                   : "drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff)",
               }}
             />
