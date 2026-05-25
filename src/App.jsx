@@ -88,7 +88,7 @@ const FACULTIES = [
     tagline: "Sleep? Sorry, Deadlines Need Love",
     color: "#F472B6",
     members: [
-      { name: "Louisa Emily Setiawan", major: "Visual Communication Design - New Media", photo: "/photos/mily.jpg" },
+      { name: "Louisa Emily Setiawan", major: "Visual Communication Design - New Media", photo: "/photos/mily.JPG" },
       { name: "Atanasius Moses Hakim", major: "Film", photo: "/photos/moses.jpg" },
       { name: "Anjani Rafika", major: "Fashion", photo: "/photos/jane.jpg" },
     ],
@@ -573,8 +573,8 @@ function MemberCard({ m, fac, onClick }) {
           padding:"0.2rem 0.4rem", marginBottom:"0.4rem",
           border:`1px solid ${fac.color}66`,
         }}>{fac.name}</div>
-        <div style={{ fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem", color:"#FAFAF5", lineHeight:1.8, marginBottom:"0.3rem" }}>{m.name}</div>
-        <div style={{ fontFamily:"'Press Start 2P',monospace", fontSize:"0.38rem", color:fac.color }}>{m.major}</div>
+        <div style={{ fontFamily:"'Press Start 2P',monospace", fontSize:"0.5rem", color:"#FAFAF5", lineHeight:1.8, marginBottom:"0.3rem", minHeight:"3.2rem" }}>{m.name}</div>
+        <div style={{ fontFamily:"'Press Start 2P',monospace", fontSize:"0.38rem", color:fac.color,minHeight:"1.5rem" }}>{m.major}</div>
       </div>
     </div>
   );
