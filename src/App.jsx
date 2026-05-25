@@ -9,9 +9,9 @@ const FACULTIES = [
     tagline: "Code-ing Nerds? Here's the People",
     color: "#00C9A7",
     members: [
-      { name: "Natasha Pratiwi Rahardja", major: "Computer Science", photo: "/photos/nat.jpg" },
-      { name: "Stevin Grace", major: "Computer Science", photo: "/photos/stevin.jpg" },
-      { name: "Sylvester Luigi Hidayat", major: "Computer Science", photo: "/photos/luigi.jpg" },
+      { name: "Natasha Pratiwi Rahardja", major: "Computer Science", photo: "/photos/nat.webp" },
+      { name: "Stevin Grace", major: "Computer Science", photo: "/photos/stevin.webp" },
+      { name: "Sylvester Luigi Hidayat", major: "Computer Science", photo: "/photos/luigi.webp" },
       
     ],
   },
@@ -22,8 +22,8 @@ const FACULTIES = [
     tagline: "Why SQL, Python Feels Like Nuts?",
     color: "#FFD600",
     members: [
-      { name: "Dicky Valentino Chen", major: "Information System", photo: "/photos/diki.JPG" },
-      { name: "Grace Magdalena", major: "Information System", photo: "/photos/grace.jpg" },
+      { name: "Dicky Valentino Chen", major: "Information System", photo: "/photos/diki.webp" },
+      { name: "Grace Magdalena", major: "Information System", photo: "/photos/grace.webp" },
     ],
   },
   {
@@ -33,7 +33,7 @@ const FACULTIES = [
     tagline: "Build Things, Break Sleep Schedules",
     color: "#FF6B6B",
     members: [
-      { name: "Azharia Ayuni Lestari", major: "Food Technology", photo: "/photos/aza.jpg" },
+      { name: "Azharia Ayuni Lestari", major: "Food Technology", photo: "/photos/aza.webp" },
     ],
   },
   {
@@ -43,7 +43,7 @@ const FACULTIES = [
     tagline: "Feelings, Thoughts, and Deep Dives",
     color: "#C084FC",
     members: [
-      { name: "Ciara Gabrielle", major: "Global Business Chinnese", photo: "/photos/rae.jpg" },
+      { name: "Ciara Gabrielle", major: "Global Business Chinnese", photo: "/photos/rae.webp" },
     ],
   },
   {
@@ -53,7 +53,7 @@ const FACULTIES = [
     tagline: "Numbers Whisper, We Make Sense",
     color: "#34D399",
     members: [
-      { name: "Keren Hana Syalomitha Sumajow", major: "Accounting", photo: "/photos/keren.JPG" },
+      { name: "Keren Hana Syalomitha Sumajow", major: "Accounting", photo: "/photos/keren.webp" },
     ],
   },
   {
@@ -63,12 +63,12 @@ const FACULTIES = [
     tagline: "Where Group Projects Test Friendships",
     color: "#F59E0B",
     members: [
-      { name: "Axel Rae Kho", major: "Business Creation", photo: "/photos/axel.JPG" },
-      { name: "Josephina Audrey Soedargo", major: "Global Business Marketing", photo: "/photos/audrey.jpg" },
-      { name: "Gisella Alicia Laloan", major: "Management", photo: "/photos/gisel.JPG" },
-      { name: "Nikita Natania Wibawa", major: "International Business Management - Global Class", photo: "/photos/niki.JPG" },
-      { name: "Victoria Christie Salem", major: "International Business Management", photo: "/photos/vc.JPG" },
-      { name: "Ivan Raditya Hardianto", major: "International Business Management", photo: "/photos/ivan.JPG" },
+      { name: "Axel Rae Kho", major: "Business Creation", photo: "/photos/axel.webp" },
+      { name: "Josephina Audrey Soedargo", major: "Global Business Marketing", photo: "/photos/audrey.webp" },
+      { name: "Gisella Alicia Laloan", major: "Management", photo: "/photos/gisel.webp" },
+      { name: "Nikita Natania Wibawa", major: "International Business Management - Global Class", photo: "/photos/niki.webp" },
+      { name: "Victoria Christie Salem", major: "International Business Management", photo: "/photos/vc.webp" },
+      { name: "Ivan Raditya Hardianto", major: "International Business Management", photo: "/photos/ivan.webp" },
     ],
   },
   {
@@ -78,7 +78,7 @@ const FACULTIES = [
     tagline: "Talk Smooth, Host Cooler than Ice",
     color: "#60A5FA",
     members: [
-      { name: "Amelia Alfieta Deliar", major: "Marketing Communication", photo: "/photos/fita.JPG" },
+      { name: "Amelia Alfieta Deliar", major: "Marketing Communication", photo: "/photos/fita.webp" },
     ],
   },
   {
@@ -88,9 +88,9 @@ const FACULTIES = [
     tagline: "Sleep? Sorry, Deadlines Need Love",
     color: "#F472B6",
     members: [
-      { name: "Louisa Emily Setiawan", major: "Visual Communication Design - New Media", photo: "/photos/mily.JPG" },
-      { name: "Atanasius Moses Hakim", major: "Film", photo: "/photos/moses.jpg" },
-      { name: "Anjani Rafika", major: "Fashion", photo: "/photos/jane.jpg" },
+      { name: "Louisa Emily Setiawan", major: "Visual Communication Design - New Media", photo: "/photos/mily.webp" },
+      { name: "Atanasius Moses Hakim", major: "Film", photo: "/photos/moses.webp" },
+      { name: "Anjani Rafika", major: "Fashion", photo: "/photos/jane.webp" },
     ],
   },
 ];
