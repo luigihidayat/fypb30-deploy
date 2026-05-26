@@ -244,7 +244,7 @@ function Navbar() {
                 objectFit: "contain",
                 transition: "height 0.35s ease, filter 0.35s ease",
                 filter: scrolled
-                  ? "drop-shadow(1px 0 0 #000000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000)"
+                  ? "drop-shadow(1px 0 0 #ffffff) drop-shadow(-1px 0 0 #ffffff) drop-shadow(0 1px 0 #ffffff) drop-shadow(0 -1px 0 #ffffff)"
                   : "drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff)",
               }}
             />
