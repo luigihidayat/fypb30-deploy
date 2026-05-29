@@ -96,13 +96,13 @@ const FACULTIES = [
 ];
 
 const TIMELINE = [
-  { phase: "01", label: "Kick Off", title: "FYPL · FL · FP Kick Off", desc: "Dimulai dengan kick off seluruh jajaran FYPL, FL, dan FP untuk mempersiapkan FYP B30.", date: "Pre-FYP" },
-  { phase: "02", label: "Training", title: "Training FL & FP", desc: "Pelatihan intensif untuk semua Freshmen Leader dan Freshmen Peer sebelum orientasi dimulai.", date: "Juli" },
+  { phase: "01", label: "Kick Off", title: "FYPL · FL · FP Kick Off", desc: "Dimulai dengan kick off seluruh jajaran FYPL, FL, dan FP untuk mempersiapkan FYP B30.", date: "6 Juli 2026" },
+  { phase: "02", label: "Training", title: "Training FL & FP", desc: "Pelatihan intensif untuk semua Freshmen Leader dan Freshmen Peer sebelum orientasi dimulai.", date: "13 Juli - 17 Juli 2026" },
   { phase: "03", label: "Briefing", title: "Briefing FL & FYPL", desc: "Final briefing sebelum FYP. Semua siap menyambut mahasiswa baru BINUSIAN 30!", date: "Juli" },
-  { phase: "04", label: "Opening", title: "Opening FYP B30", desc: "Pembukaan resmi FYP B30 Alam Sutera — welcome to the Binusian journey!", date: "Juli" },
+  { phase: "04", label: "Opening", title: "Opening FYP B30", desc: "Pembukaan resmi FYP B30 Alam Sutera — welcome to the Binusian journey!", date: "21 Juli & 4 Agustus 2026" },
   { phase: "05", label: "NEXT", title: "New Student Experience & Transition", desc: "Dua minggu penuh orientasi dipimpin FL. Kenalan, eksplorasi, dan settle in di BINUS Alam Sutera.", date: "Juli - Agustus" },
   { phase: "06", label: "AE", title: "Academic Experience", desc: "Pengenalan kehidupan akademik, sistem belajar, dan lingkungan kampus BINUS secara menyeluruh.", date: "Agustus" },
-  { phase: "07", label: "Inauguration", title: "Inauguration", desc: "Puncak dari FYP — peresmian resmi sebagai Binusian. Selamat datang, mahasiswa baru!", date: "September" },
+  { phase: "07", label: "Inauguration", title: "Inauguration", desc: "Puncak dari FYP — peresmian resmi sebagai Binusian. Selamat datang, mahasiswa baru!", date: "4 September 2026" },
 ];
 
 const FAQS = [
