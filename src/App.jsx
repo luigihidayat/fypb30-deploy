@@ -126,13 +126,13 @@ const FAQS = [
     q: "Apa perbedaan FL dan FP?",
     a: "Perbedaan utama adalah waktu tugas. FL bekerja selama NEXT sampai Inaugurasi, sedangkan FP aktif sepanjang Excellent Program selama semester 1 dan 2 mahasiswa baru.",
   },
-  // {
-  //   q: "Kapan NEXT B30 diadakan?",
-  //   a: "NEXT (New Student Experience & Transition) B30 akan diadakan dari 20 Juli - 1 Agustus (Batch 1) dan 3 - 15 Agustus (Batch 2), dilanjutkan dengan Academic Experience 18-29 Agustus dan Inauguration pada 4 September.",
-  // },
+  {
+    q: "Kapan NEXT B30 diadakan?",
+    a: "NEXT (New Student Experience & Transition) B30 akan diadakan dari 20 Juli - 1 Agustus (Batch 1) dan 3 - 15 Agustus (Batch 2), dilanjutkan dengan Academic Experience 18-29 Agustus dan Inauguration pada 4 September.",
+  },
   {
     q: "Apakah mahasiswa B28 yang nanti akan magang bisa daftar FP?",
-    // a: "Bisa! Meskipun sedang magang, kamu tetap perlu memimpin sesi EESE 1, tapi pertemuannya tidak seintensif EESE 1 — mungkin hanya sekali setiap 1–3 minggu. Kamu hanya perlu datang ke kampus untuk check-in manual setiap sesi.",
+    a: "Bisa! Meskipun sedang magang, kamu tetap perlu memonitoring sesi EESE 1, tapi pertemuannya tidak F2F seperti EESE 1. Kamu cukup perlu memonitoring secara online freshmen kalian!",
   },
 ];
 
