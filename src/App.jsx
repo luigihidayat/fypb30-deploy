@@ -64,7 +64,7 @@ const FACULTIES = [
     color: "#F59E0B",
     members: [
       { name: "Axel Rae Kho", major: "Business Creation", photo: "/photos/axel.webp" },
-      { name: "Josephina Audrey Soedargo", major: "Global Business Marketing", photo: "/photos/audrey.webp" },
+      { name: "Josephine Audrey Soedargo", major: "Global Business Marketing", photo: "/photos/audrey.webp" },
       { name: "Gisella Alicia Laloan", major: "Management", photo: "/photos/gisel.webp" },
       { name: "Nikita Natania Wibawa", major: "International Business Management - Global Class", photo: "/photos/niki.webp" },
       { name: "Victoria Christie Salem", major: "International Business Management", photo: "/photos/vc.webp" },
